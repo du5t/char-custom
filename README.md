@@ -35,3 +35,6 @@ concatenated view above. The last one is easy: just use `sha256sum`. The parent
 commit hash can be similarly replaced in a recursive fashion. However, the git
 commands don't expose a slot where you can insert a `sha256sum` pipe after tree
 construction--we have to do that ourselves.
+
+Tree formation is given in the
+[git source code](https://github.com/git/git/blob/77bd3ea9f54f1584147b594abc04c26ca516d987/builtin/mktree.c).
